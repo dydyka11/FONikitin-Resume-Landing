@@ -15,14 +15,14 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/106745285" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Никитин Фёдор — Директор по обслуживанию терминальной сети | Резюме</title>
+<title data-i18n="pageTitle">Никитин Фёдор — Руководитель сервисной службы / Руководитель полевого сервиса | Резюме</title>
 <meta name="description" content="Никитин Фёдор — 20 лет в сервисе. Управление командой 100+ человек, сетью 10 000+ терминалов, SLA 98%+. Открыт к предложениям.">
 <meta name="theme-color" content="#03110d">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:title" content="Никитин Фёдор — Резюме">
-<meta property="og:description" content="20 лет в сервисе. Директор по обслуживанию терминальной сети. Ищу работу.">
+<meta property="og:description" content="20 лет в сервисе. Руководитель сервисной службы / Руководитель полевого сервиса. Ищу работу.">
 <meta property="og:image" content="prw.jpg">
 <meta property="og:type" content="profile">
 <meta name="twitter:card" content="summary_large_image">
@@ -423,8 +423,8 @@ footer{
       <div class="avatar-frame">
         <img src="my photo.jpg" alt="Никитин Фёдор" loading="eager">
       </div>
-      <h1 class="name">Никитин <span class="accent">Фёдор</span></h1>
-      <div class="role-line" data-i18n="hero.role">Директор по обслуживанию терминальной сети</div>
+      <h1 class="name" data-i18n-html="hero.name">Никитин <span class="accent">Фёдор</span></h1>
+      <div class="role-line" data-i18n="hero.role">Руководитель сервисной службы / Руководитель полевого сервиса</div>
 
       <div class="stat-strip" aria-label="Ключевые показатели">
         <div class="stat-tile"><span class="stat-num" data-count="20">0</span><span class="stat-label" data-i18n="hero.stat1">лет в сервисе</span></div>
@@ -545,7 +545,7 @@ footer{
         <details class="log-entry" open>
           <summary>
             <span class="log-time mono">05.2013 → 12.2025</span>
-            <span class="log-co"><a href="https://www.elecsnet.ru/company" target="_blank" rel="noopener noreferrer">ГК «Элекснет»</a></span>
+            <span class="log-co"><a href="https://www.elecsnet.ru/company" target="_blank" rel="noopener noreferrer" data-i18n="exp.co1">ГК «Элекснет»</a></span>
             <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
           </summary>
           <div class="log-body" data-i18n-html="exp.job1">
@@ -586,7 +586,7 @@ footer{
         <details class="log-entry">
           <summary>
             <span class="log-time mono">03.2009 → 05.2013</span>
-            <span class="log-co">ООО «ЦЕНТР‑СЕРВИС»</span>
+            <span class="log-co" data-i18n="exp.co2">ООО «ЦЕНТР‑СЕРВИС»</span>
             <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
           </summary>
           <div class="log-body" data-i18n-html="exp.job2">
@@ -602,7 +602,7 @@ footer{
         <details class="log-entry">
           <summary>
             <span class="log-time mono">02.2007 → 03.2009</span>
-            <span class="log-co">ООО «Элекснет Сервис»</span>
+            <span class="log-co" data-i18n="exp.co3">ООО «Элекснет Сервис»</span>
             <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
           </summary>
           <div class="log-body" data-i18n-html="exp.job3">
@@ -617,7 +617,7 @@ footer{
         <details class="log-entry">
           <summary>
             <span class="log-time mono">08.2005 → 02.2007</span>
-            <span class="log-co">ООО «Элекснет Сервис»</span>
+            <span class="log-co" data-i18n="exp.co3">ООО «Элекснет Сервис»</span>
             <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
           </summary>
           <div class="log-body" data-i18n-html="exp.job4">
@@ -828,7 +828,9 @@ footer{
 (function(){
   // ---- Полный словарь EN-строк (RU берётся напрямую из исходной разметки) ----
   var en = {
-    'hero.role': 'Head of Terminal Network Service',
+    'pageTitle': 'Fedor Nikitin — Head of Service Department / Field Service Manager | CV',
+    'hero.name': 'Fedor Nikitin',
+    'hero.role': 'Head of Service Department / Field Service Manager',
     'hero.stat1': 'years in service',
     'hero.stat2': 'network uptime',
     'hero.stat3': 'units of equipment',
@@ -858,6 +860,9 @@ footer{
 
     'exp.eyebrow': 'Event Log',
     'exp.title': 'Work Experience',
+    'exp.co1': 'Elecsnet Group',
+    'exp.co2': 'CENTER-SERVICE LLC',
+    'exp.co3': 'Elecsnet Service LLC',
     'exp.job1': '<p class="job-role">Head of Terminal Network Service</p><p class="job-lead">Key areas:</p><ul><li>Dispatch center: 24/7 monitoring, work-order control</li><li>Expert support: technical support for in-house engineers and external contractors across Russia</li><li>Service center: repair of equipment of any complexity</li><li>Procurement &amp; logistics: tenders, warehouse with distributed logistics across Russia</li><li>Preparation and deployment of terminals across Russia (including hard-to-reach locations) with optimal contractor selection</li></ul><div class="gal-cap">Moscow Zoo — project photos</div><div class="gal-row"><img src="zoo5.jpg" alt="Moscow Zoo — project 1" loading="lazy"><img src="zoo1.jpg" alt="Moscow Zoo — project 2" loading="lazy"><img src="zoo2.jpg" alt="Moscow Zoo — project 3" loading="lazy"><img src="zoo3.jpg" alt="Moscow Zoo — project 4" loading="lazy"></div><div class="gal-cap">"Impound Lots" — project photos</div><div class="gal-row"><img src="shtraf1.jpg" alt="Impound Lots project — 1" loading="lazy"><img src="shtraf2.jpg" alt="Impound Lots project — 2" loading="lazy"><img src="shtraf3.jpg" alt="Impound Lots project — 3" loading="lazy"><img src="shtraf4.jpg" alt="Impound Lots project — 4" loading="lazy"></div><div class="gal-cap">"Avtodor" — project photos</div><div class="gal-row"><img src="autodor.jpg" alt="Avtodor project — 1" loading="lazy"><img src="autodor2.jpg" alt="Avtodor project — 2" loading="lazy"><img src="autodor3.jpg" alt="Avtodor project — 3" loading="lazy"><img src="autodor4.jpg" alt="Avtodor project — 4" loading="lazy"></div>',
     'exp.job2': '<p class="job-role">Deputy Head of Development Department</p><ul><li>Involved in terminal hardware design</li><li>Production control</li><li>Development of special electronics systems</li></ul>',
     'exp.job3': '<p class="job-role">Dispatcher</p><ul><li>Coordinating technicians, network monitoring</li><li>Monitoring fault-resolution deadlines</li></ul>',
