@@ -130,8 +130,8 @@ h1,h2,h3,h4{font-family:var(--disp);margin:0;letter-spacing:-.02em;}
   display:flex; align-items:center; justify-content:space-between;
   gap:10px;
   padding:calc(10px + env(safe-area-inset-top)) 16px 10px;
-  background:rgba(3,17,13,.72);
-  backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  background:rgba(3,17,13,.46);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
 }
 .status-pill{
@@ -426,7 +426,7 @@ footer{
   <div class="wrap">
     <section class="hero">
       <div class="avatar-frame" id="avatarFrame">
-        <video id="avatarVideo" src="my video.mp4" poster="my photo.jpg" muted loop playsinline webkit-playsinline preload="metadata" aria-label="Никитин Фёдор">
+        <video id="avatarVideo" src="my video.mp4" poster="my photo.jpg" muted playsinline webkit-playsinline preload="metadata" aria-label="Никитин Фёдор">
           <img src="my photo.jpg" alt="Никитин Фёдор" loading="eager">
         </video>
       </div>
@@ -1064,6 +1064,7 @@ footer{
   if(avatarFrame && avatarVideo){
     avatarFrame.addEventListener('click', function(){
       if(avatarVideo.paused){
+        if(avatarVideo.ended){ avatarVideo.currentTime = 0; }
         avatarVideo.play().catch(function(){});
       } else {
         avatarVideo.pause();
